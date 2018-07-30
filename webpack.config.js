@@ -15,11 +15,11 @@ var config = {
   module: {
     rules: [
       {
-        test: /\.js?/,
+        test: /\.(js|jsx)?$/,
         include: SRC_DIR,
         loader: "babel-loader",
         query: {
-          presets: ["react", "env", "stage-2"]
+          presets: ["env", "react", "stage-2"]
         }
       }
     ]
